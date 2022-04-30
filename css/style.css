@@ -403,22 +403,23 @@ header .wrap .mypage ul li a img:last-child{
     opacity: 0;
 }
 #video .dark .tit_part h3 span:nth-child(1){
-    animation: 20s fadetext infinite 0s;
+    animation: 14s fadetext infinite 4s;
 }
+
 #video .dark .tit_part h3 span:nth-child(2){
     font-size: 40px;
-    animation: 20s fadetext infinite 2s;
+    animation: 14s fadetext infinite 5s;
 }
+
 #video .dark .tit_part h3 span:nth-child(3){
-    animation: 20s fadetext infinite 4s;
+    animation: 14s fadetext infinite 6s;
 }
 @keyframes fadetext {
     0%{opacity: 0;}
-    25%{opacity: 0.5;}
     50%{opacity: 1;}
-    75%{opacity: 0.5;}
     100%{opacity: 0;}
 }
+
 
 /* <!--categoies part--> */
 #categoies{}
@@ -553,15 +554,24 @@ footer .wrap .top .right ul{display: flex;}
 footer .wrap .top .right ul li{margin: 0 10px;}
 footer .wrap .top .right ul li:first-child{margin-left: 0;}
 footer .wrap .top .right ul li:last-child{margin-right: 0;}
-footer .wrap .top .right ul li a{}
-footer .wrap .top .right ul li a img{
+footer .wrap .top .right ul li a{
     display: block;
-    height: 80px;
+    width: 80px; height: 80px;
+    background-size: cover;
+    background-position: 50% 50%;
     transition: box-shadow 0.5s;
 }
-footer .wrap .top .right ul li a:hover img{
-    box-shadow: 2px 2px 4px rgba(255,255,255,0.5);
-    /* box-shadow: inset 2px 2px rgba(255,255,255,0.5); */
+footer .wrap .top .right ul li:nth-child(1) a{
+    background-image: url(../img/info-img-001.jpg);
+}
+footer .wrap .top .right ul li:nth-child(2) a{
+    background-image: url(../img/info-img-002.jpg);
+}
+footer .wrap .top .right ul li:nth-child(3) a{
+    background-image: url(../img/info-img-003.jpg);
+}
+footer .wrap .top .right ul li:hover a{
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5), inset -2px -2px 4px rgba(255,255,255,0.5);
 }
 
 
