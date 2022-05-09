@@ -399,24 +399,41 @@ header .wrap .mypage ul li a img:last-child{
     font-weight: 200;
     font-style: italic;
 }
-#video .dark .tit_part h3 span{
-    opacity: 0;
-}
+#video .dark .tit_part h3 span{}
 #video .dark .tit_part h3 span:nth-child(1){
-    animation: 14s fadetext infinite 4s;
+    animation: 15s ani_01 infinite;
 }
 
 #video .dark .tit_part h3 span:nth-child(2){
     font-size: 40px;
-    animation: 14s fadetext infinite 5s;
+    animation: 15s ani_02 infinite;
 }
 
 #video .dark .tit_part h3 span:nth-child(3){
-    animation: 14s fadetext infinite 6s;
+    animation: 15s ani_03 infinite;
 }
-@keyframes fadetext {
+@keyframes ani_01{
     0%{opacity: 0;}
+    20%{opacity: 0;}
+    30%{opacity: 1;}
+    60%{opacity: 1;}
+    70%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes ani_02{
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    40%{opacity: 1;}
+    70%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes ani_03{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
     50%{opacity: 1;}
+    80%{opacity: 1;}
+    90%{opacity: 0;}
     100%{opacity: 0;}
 }
 
